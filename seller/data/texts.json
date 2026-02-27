@@ -1,0 +1,19 @@
+{
+  "plans": [
+    {
+      "name": "starter",
+      "price": "бесплатно",
+      "description": "до 10 объявлений"
+    },
+    {
+      "name": "premium",
+      "price": "999 в месяц",
+      "description": "до 30 объявлений"
+    },
+    {
+      "name": "ultimate",
+      "price": "1999 в месяц",
+      "description": "до 50 объявлений"
+    }
+  ]
+}

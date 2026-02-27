@@ -1,0 +1,42 @@
+.forsec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5rem;
+    background-color: #141416;
+    padding-bottom: 5rem;
+    .forcontainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 20px;
+        align-items: center;
+        p:nth-child(1){
+            color: #858586;
+            font-size: 24px;
+        }
+        p:nth-child(2){
+            color: #f5f5f5;
+            font-size: 40px;
+            text-align: center;
+        }
+        .forcardscontainer {
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            .card:nth-child(1){
+                padding-top: 50px;
+            }
+            .card:nth-child(2){
+                padding-top: 100px;
+            }
+            .card:nth-child(3){
+                padding-top: 70px;
+            }
+            .card:nth-child(4){
+                padding-top: 10px;
+            }
+        }
+    }
+}

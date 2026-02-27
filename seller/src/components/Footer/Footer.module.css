@@ -1,0 +1,52 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #1B1B1E;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-top: 1px solid #494949;
+    .forcont {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        width: 80%;
+        align-items: center;
+        .niz {
+            width: 97%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #333333; 
+            padding: 1rem;
+            color: #919191;
+        }
+        .forconttop {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            width: 100%;
+            
+            .forcontmel {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                align-items: flex-start;
+                .forsocials {
+                    a {
+                        margin-right: 10px;
+                    }
+                }
+                p{
+                    color: #858586;
+                }
+                a {
+                    text-decoration: none;
+                    color: white;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}

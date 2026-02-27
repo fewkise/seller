@@ -1,0 +1,42 @@
+.forsec {
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5rem;
+    background-color: #141416;
+    padding-bottom: 5rem;
+    .forcont {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+        button {
+            background-color: #009661;
+                color: white;
+                padding: 10px;
+                border-radius: 10px;
+                border: none;
+                text-transform: uppercase;
+                cursor: pointer;
+                width: 20%;
+        }
+        .cont {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            p:nth-child(1){
+                color: #858586;
+                font-size: 16px;
+            }
+            p:nth-child(2){
+                color: white;
+                font-size: 24px;
+            }
+        }
+        .cont:nth-child(2){
+            flex-direction: row-reverse;
+        }
+    }
+}
