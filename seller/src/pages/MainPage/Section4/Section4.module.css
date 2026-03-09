@@ -1,40 +1,82 @@
 .forsec {
-        display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-top: 5rem;
-    background-color: #1B1B1E;
-    padding-bottom: 5rem;
-    .cont {
-        display: flex;
-        gap: 50px;
-        align-items: center;
-        justify-content: center;
-    }
-    .card {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        align-items: flex-start;
-        transition: 0.5s;
-        padding: 1rem;
-        border-radius: 10px;
-        cursor: pointer;
-        &:hover{
-            background-color: rgb(124, 124, 124);
-        }
-        p {
-            color: white;
-        }
-    }
+  background-color: #000;
+  color: #fff;
+  padding: 80px 0;
+  text-align: center;
+  font-family: sans-serif;
 }
-.forcont {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    align-items: center;
-    p {
-        color: white;
-    }
+
+.subtitle {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 50px;
+  line-height: 1.2;
+}
+
+.cont {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #111;
+  padding: 40px 30px;
+  border-radius: 12px;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: background 0.3s;
+}
+
+.card:hover {
+  background-color: #1a1a1a;
+}
+
+.circleIcon {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #333;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.cardName {
+  color: #888;
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+
+.price {
+  font-size: 36px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.description {
+  color: #00a878; 
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background-color: #00a878;
+  border: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 18px;
 }
