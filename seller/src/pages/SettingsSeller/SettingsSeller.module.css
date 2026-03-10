@@ -1,0 +1,11 @@
+.pageWrapper { background-color: #fcfdfd; min-height: 100vh; font-family: sans-serif; }
+.container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
+.mainTitle { font-size: 32px; font-weight: 700; margin-bottom: 30px; }
+
+.tabs { display: flex; gap: 30px; border-bottom: 1px solid #eee; margin-bottom: 40px; }
+.tabs span { padding-bottom: 15px; font-size: 14px; color: #888; cursor: pointer; }
+.activeTab { color: #000; font-weight: 600; border-bottom: 2px solid #00a884; }
+
+.profileHeader { margin-bottom: 30px; }
+.profileHeader h3 { font-size: 18px; margin-bottom: 5px; }
+.logoutBtn { background: none; border: none; color: #00a884; font-size: 13px; cursor: pointer; padding: 0; }

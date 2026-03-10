@@ -8,7 +8,7 @@ const Header = () => {
         <div  className={styles.container}>
             <Link to='/'><img src={logo} alt="" /></Link>
             <ul>
-                <li><Link>Маркетплейс</Link></li>
+                <li><Link to='/profileSeller'>Маркетплейс</Link></li>
                 <li><Link>Про нас </Link></li>
                 <li><Link>Преемущества</Link></li>
                 <li><Link>Тарифы</Link></li>

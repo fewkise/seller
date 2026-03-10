@@ -1,0 +1,51 @@
+.pageWrapper {
+  background-color: #fcfdfd;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1200px; 
+  margin: 0 auto;
+  width: 100%;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+.mainTitle {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #1a1a1a;
+}
+
+.tabs {
+  display: flex;
+  gap: 35px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 60px;
+}
+
+.tabs span {
+  padding-bottom: 15px;
+  font-size: 14px;
+  color: #888;
+  cursor: pointer;
+  position: relative;
+}
+
+.activeTab {
+  color: #000 !important;
+  font-weight: 600;
+}
+
+.activeTab::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #00a884;
+}

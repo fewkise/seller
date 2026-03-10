@@ -1,0 +1,122 @@
+.whiteCard {
+  background: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.sectionTitle {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.inputGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 40px;
+  margin-bottom: 40px;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputGroup label {
+  font-size: 12px;
+  color: #999;
+  margin-bottom: 8px;
+}
+
+.inputGroup input {
+  padding: 12px;
+  border: 1px solid #eef0f2;
+  border-radius: 4px;
+  background-color: #fff;
+  font-size: 14px;
+}
+
+.photoGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.mainPhotoBox {
+  background-color: #00a884;
+  color: white;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.emptyPhotoBox {
+  background-color: #f7f9fb;
+  border: 1px solid #eef0f2;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ccc;
+  font-size: 24px;
+  border-radius: 4px;
+}
+
+.addMorePhotos {
+  background: none;
+  border: none;
+  color: #00a884;
+  font-weight: 600;
+  font-size: 13px;
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+
+.editorWrapper {
+  border: 1px solid #eef0f2;
+  border-radius: 4px;
+}
+
+.toolbar {
+  padding: 10px;
+  border-bottom: 1px solid #eef0f2;
+  display: flex;
+  gap: 15px;
+  color: #666;
+  font-weight: bold;
+}
+
+.textarea {
+  width: 100%;
+  min-height: 150px;
+  border: none;
+  padding: 15px;
+  outline: none;
+  resize: vertical;
+  font-family: inherit;
+}
+
+.footerActions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+
+.submitBtn {
+    background-color: #00a884;
+    color: white;
+    border: none;
+    padding: 15px 45px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
