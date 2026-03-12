@@ -10,14 +10,13 @@ const ProfileSeller = () => {
       <HeaderSeller />
       
       <main className={styles.container}>
+        <h1 className={styles.mainTitle}>Мои объявления</h1>
         <nav className={styles.tabs}>
-          <span className={styles.activeTab}>Мои объявления</span>
-          <span>Сообщения</span>
-          <Link to='/subSeller'><span>Управление подпиской</span></Link>
-          <Link to='/settingsSeller'><span>Настройки профиля</span></Link>
+          <Link to="/" className={styles.activeTab}>Мои объявления</Link>
+          <Link to="/registerSeller">Сообщения</Link>
+          <Link to="/subSeller">Управление подпиской</Link>
+          <Link to="/settingsSeller">Настройки профиля</Link>
         </nav>
-
-        <p className={styles.stats}>Использовано объявлений: <b>4/10</b></p>
         <Section9 />
         
       </main>

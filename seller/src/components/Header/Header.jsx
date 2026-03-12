@@ -10,7 +10,7 @@ const Header = () => {
             <ul>
                 <li><Link to='/profileSeller'>Маркетплейс</Link></li>
                 <li><Link>Про нас </Link></li>
-                <li><Link>Преемущества</Link></li>
+                <li><Link>Преимущества</Link></li>
                 <li><Link>Тарифы</Link></li>
             </ul>
             <Link to='/login'><button>Войти</button></Link>

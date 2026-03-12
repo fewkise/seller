@@ -1,10 +1,11 @@
 import styles from './ProductCard.module.css';
-
+import {Link} from 'react-router-dom'
 const ProductCard = ({ item }) => {
   const imageUrl = `http://localhost:5000/uploads/${item.image_url}`;
 
   return (
-    <div className={styles.card}>
+    <Link to={`/product/${item.id}`}>
+      <div className={styles.card}>
       <img src={imageUrl} alt={item.title} className={styles.image} />
       <div className={styles.body}>
         <div className={styles.category}>Закрытые грузопассажирские автомобили</div>
@@ -18,6 +19,8 @@ const ProductCard = ({ item }) => {
         </div>
       </div>
     </div>
+    </Link>
+    
   );
 };
 

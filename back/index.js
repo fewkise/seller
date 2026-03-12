@@ -20,7 +20,7 @@ const storage = multer.diskStorage({
     filename: (req, file, cb) => {
         cb(null, Date.now() + path.extname(file.originalname));
     }
-});
+})
 const upload = multer({ storage });
 app.post('/api/products', upload.single('image'), async (req, res) => {
     try {
@@ -36,7 +36,7 @@ app.post('/api/products', upload.single('image'), async (req, res) => {
         console.error(err);
         res.status(500).json({ error: "Ошибка при создании" });
     }
-});
+})
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 app.get('/api/text', async (req, res) => {
     try {
@@ -53,7 +53,7 @@ app.get('/api/products', async (req, res) => {
     } catch (err) {
         res.status(500).json({ error: err.message });
     }
-});
+})
 app.post('/api/auth/register', async (req, res) => {
     const { firstName, lastName, email, password } = req.body;
 
@@ -68,7 +68,35 @@ app.post('/api/auth/register', async (req, res) => {
         console.error(err);
         res.status(500).json({ error: "Ошибка при регистрации" });
     }
-});
+})
+app.get('/api/products/:id', async (req, res) => {
+    try {
+        const { id } = req.params;
+        const result = await pool.query('SELECT * FROM products WHERE id = $1', [id]);
+        
+        if (result.rows.length === 0) {
+            return res.status(404).json({ error: "Товар не найден" });
+        }
+        
+        res.json(result.rows[0]);
+    } catch (err) {
+        res.status(500).json({ error: err.message });
+    }
+})
+app.delete('/api/products/:id', async (req, res) => {
+    try {
+        const { id } = req.params;
+        const result = await pool.query('DELETE FROM products WHERE id = $1', [id]);
+        
+        if (result.rowCount === 0) {
+            return res.status(404).json({ error: "Товар не найден" });
+        }
+        
+        res.json({ message: "Удалено успешно" });
+    } catch (err) {
+        res.status(500).json({ error: err.message });
+    }
+})
 app.post('/api/auth/login', async (req, res) => {
     const { email, password } = req.body;
     try {
@@ -91,5 +119,5 @@ app.post('/api/auth/login', async (req, res) => {
         console.error(err);
         res.status(500).json({ error: "Ошибка сервера при входе" });
     }
-});
+})
 app.listen(5000, () => console.log('Server running on port 5000'))

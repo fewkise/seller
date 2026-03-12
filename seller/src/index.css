@@ -3,4 +3,7 @@ body {
   font-family: 'Inter', -apple-system, sans-serif;
   background-color: #fcfdfd;
   color: #333;
+  a{
+    text-decoration: none;
+  }
 }

@@ -17,7 +17,7 @@ const Section8 = () => {
             if (response.ok) {
                 alert('Вы успешно вошли!')
                 console.log('Данные пользователя:', data.user);
-                navigate('/')
+                navigate('/profileSeller')
             } else {
                 alert(data.error || 'Ошибка входа')
             }

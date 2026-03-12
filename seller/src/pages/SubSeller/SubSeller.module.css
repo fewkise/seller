@@ -11,6 +11,7 @@
   width: 100%;
   padding: 40px 20px;
   box-sizing: border-box;
+  padding-bottom: 15rem;
 }
 
 .mainTitle {
@@ -49,3 +50,8 @@
   height: 2px;
   background-color: #00a884;
 }
+
+
+.profileHeader { margin-bottom: 30px; }
+.profileHeader h3 { font-size: 18px; margin-bottom: 5px; }
+.logoutBtn { background: none; border: none; color: #00a884; font-size: 13px; cursor: pointer; padding: 0; }

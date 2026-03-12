@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import styles from './Section4.module.css';
+import { Link } from 'react-router-dom';
 
 const Section4 = () => {
   const [text, setText] = useState([]);
@@ -33,7 +34,7 @@ const Section4 = () => {
               </h3>
               <p className={styles.description}>{item.description}</p>
               <button className={styles.btn}>
-                <span>{'>'}</span>
+                <Link to='/subSeller'><span>{'>'}</span></Link>
               </button>
             </div>
           ))}

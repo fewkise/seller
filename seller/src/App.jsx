@@ -8,6 +8,8 @@ import ProfileSeller from './pages/ProfileSeller/ProfileSeller'
 import CreateNewItem from './pages/CreateNewItem/CreateNewItem'
 import SettingsSeller from './pages/SettingsSeller/SettingsSeller'
 import SubSeller from './pages/SubSeller/SubSeller'
+import ItemCardSeller from './pages/ItemCardSeller/ItemCardSeller'
+import RegisterSeller from './pages/RegisterSeller/RegisterSeller'
 function App() {
 
   return (
@@ -20,7 +22,9 @@ function App() {
           <Route path='/profileSeller' element={<ProfileSeller/>}/>
           <Route path='/createNewItem' element={<CreateNewItem/>}/>
           <Route path='/settingsSeller' element={<SettingsSeller/>}/>
+          <Route path='/registerSeller' element={<RegisterSeller/>}/>
           <Route path='/subSeller' element={<SubSeller/>}/>
+          <Route path="/product/:id" element={<ItemCardSeller />} />
         </Routes>
       
       </BrowserRouter>

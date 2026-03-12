@@ -13,10 +13,10 @@ const SettingsSeller = () => {
         <h1 className={styles.mainTitle}>Настройки профиля</h1>
         
         <nav className={styles.tabs}>
-          <Link to='/profileSeller'><span>Мои объявления</span> </Link>
-          <span>Сообщения (4 новых)</span>
-          <span>Управление подпиской</span>
-          <Link to='/settingsSeller'><span className={styles.activeTab}>⚙️ Настройки профиля</span></Link>
+            <Link to='/profileSeller'><span>Мои объявления</span></Link>
+            <Link to='/registerSeller'><span>Сообщения (4 новых)</span></Link>
+            <Link to='/subSeller'><span >Управление подпиской</span></Link>
+            <span className={styles.activeTab}>Настройки профиля</span>
         </nav>
 
         <div className={styles.profileHeader}>

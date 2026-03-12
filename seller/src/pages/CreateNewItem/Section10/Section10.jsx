@@ -37,7 +37,7 @@ const Section10 = () => {
 
       if (response.ok) {
         alert("Успешно!");
-        window.location.href = '/';
+        window.location.href = '/profileSeller';
       }
     } catch (error) {
       console.error(error);

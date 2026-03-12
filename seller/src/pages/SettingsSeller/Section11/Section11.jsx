@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import styles from './Section11.module.css';
-
+import arrow from '../../../assets/Vector 4.png'
 const Section11 = () => {
   // Состояние, где каждая секция управляется отдельно
   const [openSections, setOpenSections] = useState({
@@ -21,7 +21,7 @@ const Section11 = () => {
       <div className={styles.item}>
         <div className={styles.header} onClick={() => toggle('account')}>
           <span className={styles.title}>Настройки акаунта</span>
-          <span className={`${styles.arrow} ${openSections.account ? styles.up : ''}`}>⌄</span>
+          <span className={`${styles.arrow} ${openSections.account ? styles.up : ''}`}><img src={arrow}/></span>
         </div>
         {openSections.account && (
           <div className={styles.content}>
@@ -48,7 +48,7 @@ const Section11 = () => {
       <div className={styles.item}>
         <div className={styles.header} onClick={() => toggle('contact')}>
           <span className={styles.title}>Изменить контактную информацию</span>
-          <span className={`${styles.arrow} ${openSections.contact ? styles.up : ''}`}>⌄</span>
+          <span className={`${styles.arrow} ${openSections.contact ? styles.up : ''}`}><img src={arrow}/></span>
         </div>
         {openSections.contact && (
           <div className={styles.content}>
@@ -69,7 +69,7 @@ const Section11 = () => {
       <div className={styles.item}>
         <div className={styles.header} onClick={() => toggle('company')}>
           <span className={styles.title}>Изменить информацию о компании</span>
-          <span className={`${styles.arrow} ${openSections.company ? styles.up : ''}`}>⌄</span>
+          <span className={`${styles.arrow} ${openSections.company ? styles.up : ''}`}><img src={arrow}/></span>
         </div>
         {openSections.company && (
           <div className={styles.content}>
